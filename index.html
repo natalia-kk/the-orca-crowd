@@ -1,0 +1,367 @@
+<!doctype html> <!-- Tells the  browser this is a HTML 5 document. (All HTML documents must start with a doctype type declaration). -->
+
+<html lang="en"> <!-- The container for all other html elements. Language attribute specifies the language used, important for screen readers. -->
+
+    <head> <!-- container for metadata (data about data) -->
+        
+        <meta charset="utf-8"> <!-- specifies the character encoding -->  
+        <meta name="description" content="A non-profit organisation dedicated to the welfare and protection of orcas worldwide. We help raise awareness; retire, rehabilate and release captive orcas; and educate the public about captivity."> <!-- Provides a description of the page. Used by search engines, and useful for personal indexing purposes -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- A meta element to use on all web pages - for automatic resize accross all devices -->
+        <meta name="keywords" content="non-profit organisation, captivity, captive orcas, end captivity, welfare, protection, orca whale, rehabilitation, release, wild orcas, protect orcas, ocean sanctuaries"> <!-- SEO keywords -->
+        
+        <title>The Orca Crowd - Non-profit Organisation - End Captivity</title> <!-- the specific page title to be displayed in the browser tab -->
+        
+        <!-- external sources -->
+        <link rel="stylesheet" href="https://use.typekit.net/pni3gzs.css"> <!-- import the Adobe web fonts used on website -->
+        <link rel="stylesheet" href=css/style.css> <!-- Apply my css style sheet -->
+        <script src="https://kit.fontawesome.com/e5eebdbfc2.js" crossorigin="anonymous"></script> <!-- Link to my free Font Awesome 5 icon kit -->
+        
+    </head>
+    
+    <body> <!-- contains all the contents/visible elements of an html document -->
+
+        <header> <!-- Header section START -->
+
+            <nav> <!-- sticky navigation bar START -->
+                <div id="navigationBar">
+                    <a href="#heroContent" title="home"> <!-- logo / homepage navigation link -->
+                        <img id="logo" src=images/orca-crowd-logo.svg height="65" width="62" alt="The Orca Crowd logo"> 
+                        <!-- 'The Orca Crowd' logo. 2020, Digital Image. Reproduced from: DIG22 Client Simulated Briefs. -->
+                    </a>
+
+                    <!-- navigation links -->
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()" title="menu">
+                        <i class="fa fa-bars" id="hamburger"></i>
+                    </a>
+                    
+                    <ul id="navLinks"> 
+                        <li><a href="#ourMission" title="Our Mission section">Our Mission</a></li>
+                        <li><a href="#history" title="History section">History</a></li>
+                        <li><a href="#campaigns" title="Campaigns section">Campaigns</a></li>
+                        <li><a href="#getInvolved" title="Get Involved section">Get involved</a></li>
+                        <li><a href="#contact" title="Contact Us section">Contact</a></li>
+                    </ul> 
+                </div>
+            </nav> <!-- sticky navigation bar END -->
+            
+            <!-- hero header content -->
+            <section id="heroContent"> <!-- heroContent specifies section to add background image to -->
+               <div id="heroText" class="sectionContainer">
+                    <h1 id="heroHeading">THE ORCA CROWD</h1>
+                    <p id="heroSubheading">
+                        Dedicated to the welfare and protection of orcas worldwide.
+                    </p>                 
+                </div>
+                
+                <!-- FontAwesome icon -->
+                <i class="fas fa-chevron-circle-down" id="chevron"></i>  
+            </section>
+            
+        </header> <!-- Header section END -->
+        
+        <!-- PAGE SECTIONS START -->
+        
+        <div class="sectionContainer"> <!-- css styling sets entire group of sections width to width to 90% -->
+            
+            <section class="section" id="ourMission"> <!-- Our Mission section START -->
+                
+                <h2>Our Mission</h2> 
+                <div class="sectionBackground">          
+                    
+                    <div id="missionStatement">
+                        <p>
+                            Our mission is to create a world where all orcas can thrive in their natural, wild  environments. Founded in 2007 by Shannon Forsythe, The Orca Crowd is a non-profit organisation dedicated to the welfare and protection of orcas worldwide. 
+                        </p> 
+                    </div>
+                    
+                    <article class="contentSection"> <!-- main content box START -->
+                        
+                        <figure id="video" class="center">
+                            <video autoplay muted loop width="700" controls >
+                                <source src="images/pexels-orcas-swimming.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video> <!-- Video by Zlatin Georgiev from Pexels, https://www.pexels.com/video/5607993/ -->
+                        </figure>
+                        
+                        <div>
+                            <h3>Orcas don't belong in captivity</h3>
+                                <p>
+                                    Orcas are extremely intelligent and social mammals that swim vast distances in the wild – it’s no surprise that stress-related behaviours in captive orcas have been documented for decades! It’s time to end captivity. <!--(Daly, 2019)-->
+                                </p>
+                        </div>
+                        
+                        <div id="factBox">
+                            <h4>Every day in the wild, orcas:</h4>
+                                <ul class="list">
+                                    <li><b>SWIM</b> up to 40 miles</li> <!--(Daly, 2019)-->
+                                    <li><b>DIVE</b> 100-500 feet - several times a day</li> <!--(Daly, 2019)-->
+                                </ul>
+                        </div>
+                        
+                    </article> <!-- main content box END -->
+                    
+                    <figure>
+                        <img id="illustration" src="images/orca-illustration-flip.svg" width="200" height="128" alt="Orca illustration"> 
+                    </figure>
+                    
+                    <div class="contentBox"> <!-- related but not main content - use ASIDE?? -->
+                        <h4>Did you know?</h4>
+                        <p>
+                            Orcas have the second largest brain of any animal on the planet. And – just like humans - their incredible brains are highly developed in the areas of social intelligence, self-awareness and language.<!--(Daly, 2019)-->
+                        </p>
+                    </div>
+                    
+                </div> <!-- section background END --> 
+                
+                <section> <!-- call to action --> 
+                    <h4 id="helpOut">Want to help out?</h4>
+                    <div class="center">
+                        <a class="button" href="#getInvolved" title="Button">Find out how you can GET INVOLVED</a>
+                    </div>
+                </section> <!-- end call to action --> 
+                
+            </section> <!-- Our Mission section END -->            
+            
+            <section class="section" id="history"><!-- History section START -->
+                
+                <h2>History</h2>
+                <div class="sectionBackground"> <!-- flexbox container START -->
+                <div class="flexContainer">
+                    <div class="historyFacts">
+                        <ul class="list">
+                            <li>Orcas have been kept in captivity since 1961.<!--(WDC n.d.)--></li>
+                            <li>At least 166 orcas have been taken into captivity from the wild since 1961.<!--(WDC n.d.)--></li>
+                            <li>70 orcas have been born in captivity around the world since 1977 – another 30 were stillborn or died in utero.<!--(Daly 2019)--></li>
+                            <li> 37 of them are now dead. Only a handful of wild-caught orcas have survived beyond the age of 30. <b>No captive-born orca yet has.<!--(Daly 2019)--></b></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="corkyBox">
+                        <p>Get to know ...</p>
+                        <h3>Corky and Fife</h3>
+                            <p>
+                                Corky, held at SeaWorld in San Diego, is the longest surviving orca in captivity. She was captured in 1969 from the Northern Resident orca population that that man the waters of Vancouver Island, Canada. She has had 7 offspring in captivity – none have survived.<!--(WDC n.d.)-->
+                            </p>  
+                            <p>
+                                Corky’s family (known as the A5 pod), including her brother, Fife, continue to thrive in the wild. <!--(WDC n.d.)-->
+                            </p>
+                    </div>
+                </div> <!-- flexbox container END -->  
+                    
+                </div> <!-- section background END -->
+            </section> <!-- History section END -->
+            
+            <section class="section" id="campaigns"> <!-- Campaigns section START -->
+                
+                <h2>Campaigns</h2>      
+                <div class="sectionBackground">
+                    
+                    <div class="campaignContainer"> <!-- flexbox container START -->
+                    
+                        <article class="campaign">
+                            <h3>Rehabilitation and release</h3>
+                                <img src="images/rehabilitation-and-release.jpg" alt="Free orcas in the ocean" width="650" height="433"> <!-- Free to use photo from Pexels: https://www.pexels.com/photo/action-animal-daylight-lake-289324/ -->   
+                                <p>
+                                    Sadly, captive orcas can’t simply be released in to the wild because they have learned to rely on being fed by humans<!--(WDC n.d.)-->. We have partnered with The Whale Sanctuary Project , which aims to establish ocean sanctuaries for rescued and retired dolphins and whales.
+                                </p>
+                                <p>
+                                    Your support can help us create these sanctuaries to allow captive orcas to thrive in their natural habitat, and even be re-introduced to the wild.
+                                </p>
+                        </article>
+
+                        <article class="campaign">
+                            <h3>End captivity</h3>
+                                <img src="images/orcas-in-captivity.jpg" alt="Performing orcas in captivity" width="650" height="433"> <!-- Photo by Iulia Laslea on Unsplash -->
+                                <p>
+                                    At least 60 orcas are held in captivity around the world - some are wild-caught; some were born in captivity. Since 2002, at least 19 orcas have been taken from the wild into captivity, most recently in Russia.<!--(WDC n.d.)-->
+                                </p>
+                                <p>
+                                    Your support can help us put pressure on governments around the world to finally ban the breeding of captive orcas and the capture of wild whales.
+                                </p>
+                        </article>
+
+                        <article class="campaign">
+                            <h3>Stop the demand</h3>
+                                <img src="images/education-end-demand.jpg" alt="Public education in action" width="650" height="433"> <!-- Photo by fauxels from Pexels --> 
+                                <p>
+                                    Education and raising public awareness plays an essential role in our mission by ending the demand for performing orcas. No demand means no more orcas will need to be exploited for human entertainment – and then there’s no reason for them to kept in small tanks!
+                                </p>
+                                <p>
+                                    Your support can help us continue to fund and develop increased education and schooling programs worldwide.
+                                </p>
+                        </article>
+                        
+                    </div> <!-- flexbox container END -->
+                    
+                </div> <!-- section background END -->
+            </section> <!-- Campaigns section END -->
+            
+            <section id="getInvolved"><!-- Get Involved section START -->
+                
+                <h2>Get Involved</h2>
+                <div class="sectionBackground"> 
+                    
+                    <div class="flexContainer"> <!-- flexbox container START -->
+                        <div class="adopt">
+                            <h3>Adopt</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In mollis nunc sed id semper risus in. 
+                                </p>  
+                        </div>
+
+                        <div class="donate">
+                            <h3>Donate</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In mollis nunc sed id semper risus in. 
+                                </p> 
+                        </div>
+                    </div> <!-- flexbox container END -->     
+                
+                    <div class="socialMedia"> <!-- social media START -->
+                        <h4>Help us spread the word on social media</h4>
+                        <ul id="socialIcons">
+                            <li>
+                                <a href="https://facebook.com" target="_blank" title="Facebook icon"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com" target="_blank" title="Instagram icon"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com" target="_blank" title="Twitter icon"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com" target="_blank" title="YouTube icon"><i class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div> <!-- social media END -->
+
+                    <div class="instagram"> <!-- instagram container START -->
+                        <div class="flexContainer"> <!-- flexbox container START -->
+                            
+                            <!-- Photo by Bart van meele on Unsplash -->
+                            <div><img src="images/instagram-1.png" width="280" height="280" class="instaImage1" alt="Instagram image"></div>
+                            
+                            <!-- ‘Stop Dropping Trash Where We Splash - Whale Conservation’ by Bangtees. (2020). https://www.redbubble.com/people/bangtees/works/38140264-stop-dropping-trash-where-we-splash-whale-conservation?asc=u -->
+                            <div><img src="images/instagram-2.png" width="280" height="280" class="instaImage2" alt="Instagram image"></div>
+                            
+                            <!-- CANGGU, BALI | 13 x Things To Do in Canggu, Bali - The Full Guide. (2020). https://www.saltinourhair.com/bali/canggu/ -->
+                            <div><img src="images/instagram-3.png" width="280" height="280" class="instaImage3" alt="Instagram image"></div>
+                        
+                        </div> <!-- flexbox container END -->
+
+                        <div class="center">
+                            <a class="button" href="https://instagram.com" target="_blank" title="Button">Follow us on Instagram for daily updates</a>
+                        </div>
+                    </div> <!-- instagram container END-->
+                    
+                </div> <!-- section background END -->
+            </section> <!-- Get Involved section END -->
+            
+            <section class="section" id="contact"><!-- Contact section START -->
+                
+                <h2>Contact us</h2>
+                <div class="sectionBackground"> <!-- section background START -->
+                    <div class="flexContainer"><!-- flexbox container START -->
+                
+                        <div class="contactInfo"> <!-- contact information (flex item) START -->
+                            <dl>
+                                <dt><i class="fas fa-phone-alt"></i>Phone</dt>
+                                    <dd>0968 765 234</dd>
+                                <dt><i class="fas fa-envelope"></i>Email</dt>
+                                    <dd>theorcacrowd@gmail.com.au</dd>
+                                <dt><i class="fas fa-map-marker-alt"></i>Post</dt>
+                                    <dd>PO Box 720<br>
+                                        Port Adelaide Business Centre<br>
+                                        Port Adelaide SA 5015<br>
+                                        Australia
+                                    </dd>
+                            </dl>
+                        </div> <!-- contact information (flex item) END -->
+                        
+                        <div class="contactForm"> <!-- contact form (flex item) START -->
+                            <p id="message">
+                                Send us a message below
+                            </p>
+                            
+                            <form>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name..">
+
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Your email address..">
+
+                                <label for="subject">Subject</label>
+                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+
+                                <input type="button" onclick="alert('Thankyou for contacting us. Our response time is typically 1-3 days. Check your email!')" value="Submit"> <!-- note: as I have not yet learned how servers process input, this form is nonfunctional and I have used type='button' in place of 'submit' -->
+                            </form>
+                        </div> <!-- contact form END -->
+                        
+                    </div> <!-- flexbox container END -->
+                </div> <!-- section background END -->
+            </section> <!-- Contact section END -->
+        
+        </div> <!-- PAGE SECTIONS sectionsContainer END -->
+        
+        <div class="center"> <!-- Back to top button -->
+            <a class="button" id="top" href="#heroContent" title="button">Back to top</a>
+        </div>
+        
+        <footer> <!-- footer START -->
+                <div id="footerContent" class="sectionContainer">
+                    <div class="gridContainer">
+                        
+                        <figure class="item1">
+                            <img id="logoFooter" src=images/logo-white.svg height="100" width="95" alt="The Orca Crowd logo"> <!-- 'The Orca Crowd' logo. 2020, Digital Image. Reproduced from: DIG22 Client Simulated Briefs. -->
+                        </figure>
+
+                        <ul id="socialFooter" class="item2">
+                            <li>
+                                <a href="https://facebook.com" target="_blank" title="Facebook icon"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com" target="_blank" title="Instagram icon"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com" target="_blank" title="Twitter icon"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com" target="_blank" title="YouTube icon"><i class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+
+                        <div class="item3">
+                            <p>
+                                This website has been created as part of an assisgnment in an approved course of study for Curtin University and contains copyright material not created by the author. All copyright material used remains copyright to the respective owners and has been used here pursuant to Secion 40 of the Copyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced without concent of the orginal copyright owners. See code comments for references.
+                            </p> <!-- Curtin University copyright declaration -->
+                        </div>
+
+                        <p class="item4">
+                            Designed by: Natalia Kloppers
+                        </p>
+                        
+                    </div> <!-- grid container END -->
+                </div>
+        </footer> <!-- footer END -->
+        
+        <!-- javascript START -->
+        <script>
+            // toggle hamburger menu dropdown
+            // code sourced from: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+            function myFunction() {
+              var x = document.getElementById("navLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script> <!-- javascript END -->
+        
+    </body> <!-- Closing body tag -->
+    
+</html> <!-- Closing html tag -->
+
+<!-- Reference list (sources used in text) 
+        WDC (Whale and Dolphin Conservation). n.d. “Fate of Orcas in Captivity.” Accessed November 13, 2020. https://uk.whales.org/our-4-goals/end-captivity/orca-captivity/. 
+        Daly, Natasha. 2019. “Orcas don’t do well in captivity. Here’s why.” National Geographic. https://www.nationalgeographic.com/animals/2019/03/orcas-captivity-welfare/. -->
