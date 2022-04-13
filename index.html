@@ -35,11 +35,11 @@
                     </a>
                     
                     <ul id="navLinks"> 
-                        <li><a href="#ourMission" title="Our Mission section">Our Mission</a></li>
-                        <li><a href="#history" title="History section">History</a></li>
-                        <li><a href="#campaigns" title="Campaigns section">Campaigns</a></li>
-                        <li><a href="#getInvolved" title="Get Involved section">Get involved</a></li>
-                        <li><a href="#contact" title="Contact Us section">Contact</a></li>
+                        <li><a class="nav-link" href="#ourMission" title="Our Mission section">Our Mission</a></li>
+                        <li><a class="nav-link" href="#history" title="History section">History</a></li>
+                        <li><a class="nav-link" href="#campaigns" title="Campaigns section">Campaigns</a></li>
+                        <li><a class="nav-link" href="#getInvolved" title="Get Involved section">Get involved</a></li>
+                        <li><a class="nav-link" href="#contact" title="Contact Us section">Contact</a></li>
                     </ul> 
                 </div>
             </nav> <!-- sticky navigation bar END -->
@@ -363,7 +363,32 @@
                 x.style.display = "block";
               }
             }
+
+            // add active class to menu links when clicked
+            // code sourced from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_active_element
+            // 1. Get the container element
+            var nav = document.getElementById("navLinks");
+
+            // 2. Get all buttons with class="btn" inside the container
+            var links = nav.getElementsByClassName("nav-link");
+
+            // 3. Loop through the buttons and add the active class to the current/clicked button
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+
+                    // If there's no active class
+                    if (current.length > 0) {
+                        current[0].className = current[0].className.replace(" active", "");
+                    }
+
+                    // Add the active class to the current/clicked button
+                    this.className += " active";
+                });
+            }
+
         </script> <!-- javascript END -->
+
         
     </body> <!-- Closing body tag -->
     
