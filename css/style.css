@@ -10,7 +10,10 @@ black #1E272E
 light grey #F9F9F9
 */
 
-/* NOTE: viewing optimised for screens equal to and above 350px wide */
+/* NOTE: 
+- viewing optimised for screens equal to and above 350px wide 
+- nav bar height = 65px
+*/
 
 
 /* ICON STYLING ------------------------------------------------*/
@@ -103,26 +106,28 @@ ul#socialFooter .fab {
 
 /* apply to everything */
 * {
-    margin: 0; /* reset all margins */
+    margin: 0; /* reset all margins and padding*/
     padding: 0;
     box-sizing: border-box; /* include padding and border in box's total width/height (ensures that padding stays inside the box so it doesn't break */
 } 
 
 /* set margin to create space above each section and the footer (default margins removed with reset used above) */
 .sectionContainer section, footer {
-    margin-top: 10%; /* should use % or px? */
+    padding-top: 10%; 
     position: relative;
+    /*height: calc(100vh-65px);  removes header menu from section view (for section scrolling) */
 }
 
 body {
     width: 100%;
+    height: 100vh;
     font-size: 100%;
     color: #1E272E; /* sets websites default font colour */
 }
 
-/* container that encompasses all page sections */
+/* containers that encompasses all page sections */
 .sectionContainer {
-    width: 90%; 
+    width: 80%; 
     margin-left: auto; /* position in center */
     margin-right: auto;
 }
@@ -309,9 +314,9 @@ nav {
 #hamburger {
     display: none; /* hide until media query displays it on specified screen size */
     float: right;
-    font-size: 2.5em;
+    font-size: 2em;
     color: #fff;
-    transform: translate(-25px, 10px); /* position hamburger menu */
+    transform: translate(-25px, 15px); /* position hamburger menu */
 }
 
 #hamburger:hover {
