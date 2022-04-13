@@ -113,9 +113,8 @@ ul#socialFooter .fab {
 
 /* set margin to create space above each section and the footer (default margins removed with reset used above) */
 .sectionContainer section, footer {
-    padding-top: 10%; 
+    padding-top: 100px; 
     position: relative;
-    /*height: calc(100vh-65px);  removes header menu from section view (for section scrolling) */
 }
 
 body {
@@ -292,19 +291,22 @@ nav {
 }
 
 #navLinks a {
-    color: white;
     text-decoration: none;
     font-size: 18px; 
     font-family: "Roboto", sans-serif;
-    font-weight: normal;
     width: 140px;
     display: block;
     text-align: center;
     padding: 17px 15px;
 }
 
-/* link hover state */
-#navLinks a:hover {
+/* link states */
+#navLinks a:link, #navLinks a:visited {
+    color: white;
+    font-weight: normal;
+}
+
+#navLinks a:hover, #navLinks a:active {
     background-color: #9FDAD8;
     color: #261a17;
     font-weight: bold;
@@ -325,8 +327,10 @@ nav {
 
 /* MEDIA QUERIES navigation bar: */
 
-@media (min-width: 1021px) {
-    
+@media (min-width: 500px) {
+    #logo {
+        width: 85px;
+    }
 }
 
 /* breakpoint to replace horizontal menu with hamburger menu + vertical menu that toggles on click (see javascrip in html) */
@@ -734,7 +738,7 @@ footer {
 }
 
 #socialFooter li {
-    display: inline-block;
+    display: block;
     float: right;
 }
 
