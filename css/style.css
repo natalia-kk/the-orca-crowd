@@ -344,7 +344,12 @@ nav {
         clear: both;
     }
     
-
+    #navLinks {
+        position: relative; 
+        margin-top: 65px; /* height of navbar - positions links below hamburger menu */
+        background-color: #4B7299;
+        display: none; /* hide by default - revealed on click */
+    }
     
     #navLinks li {
         display: block; /* display in a columm instead of a row */
