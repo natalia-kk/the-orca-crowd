@@ -34,7 +34,7 @@
                         <i class="fa fa-bars" id="hamburger"></i>
                     </a>
                     
-                    <ul id="navLinks"> 
+                    <ul id="navLinks" class="topnav"> 
                         <li><a class="nav-link" href="#ourMission" title="Our Mission section">Our Mission</a></li>
                         <li><a class="nav-link" href="#history" title="History section">History</a></li>
                         <li><a class="nav-link" href="#campaigns" title="Campaigns section">Campaigns</a></li>
@@ -353,15 +353,15 @@
         
         <!-- javascript START -->
         <script>
-            // toggle hamburger menu dropdown
-            // code sourced from: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+            /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon 
+            code sourced from: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp*/
             function myFunction() {
-              var x = document.getElementById("navLinks");
-              if (x.style.display === "block") {
-                x.style.display = "none";
-              } else {
-                x.style.display = "block";
-              }
+                var x = document.getElementById("navLinks");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
             }
 
             // add active class to menu links when clicked

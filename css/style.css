@@ -16,6 +16,11 @@ light grey #F9F9F9
 */
 
 
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 /* ICON STYLING ------------------------------------------------*/
 
 /*style chevron icon appearance */
@@ -281,11 +286,11 @@ nav {
 /* LINK STYLING */ 
 
 /* position */
-#navLinks {
+.topnav {
     float: right;
 }
 
-#navLinks li {
+.topnav li {
     list-style: none;
     display: inline-block;
 }
@@ -337,21 +342,26 @@ nav {
     }
 }
 
-/* breakpoint to replace horizontal menu with hamburger menu + vertical menu that toggles on click (see javascrip in html) */
+/* breakpoint 
+1. replace horizontal menu with hamburger menu */
 @media (max-width: 1022px) {
     #hamburger {
         display: block;
         clear: both;
     }
-    
-    #navLinks {
+    .topnav li {
+        display: none; /* hide by default - revealed on click */
+    }
+}
+/* 2. + vertical menu that toggles on click (see javascrip in html) */
+@media (max-width: 1022px) { 
+    .topnav.responsive {
         position: relative; 
         margin-top: 65px; /* height of navbar - positions links below hamburger menu */
         background-color: #4B7299;
-        display: none; /* hide by default - revealed on click */
     }
     
-    #navLinks li {
+    .topnav.responsive li {
         display: block; /* display in a columm instead of a row */
     }
 }
