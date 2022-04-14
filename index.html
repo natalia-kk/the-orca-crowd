@@ -14,8 +14,8 @@
         <!-- external sources -->
         <link rel="stylesheet" href="https://use.typekit.net/pni3gzs.css"> <!-- import the Adobe web fonts used on website -->
         <link rel="stylesheet" href=css/style.css> <!-- Apply my css style sheet -->
-        <script src="https://kit.fontawesome.com/e5eebdbfc2.js" crossorigin="anonymous"></script> <!-- Link to my free Font Awesome 5 icon kit -->
-        
+        <!-- <script src="https://kit.fontawesome.com/e5eebdbfc2.js" crossorigin="anonymous"></script> Link to my free Font Awesome 5 icon kit -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     
     <body> <!-- contains all the contents/visible elements of an html document -->
@@ -56,7 +56,9 @@
                 </div>
                 
                 <!-- FontAwesome icon -->
-                <i class="fas fa-chevron-circle-down" id="chevron"></i>  
+                <a href="#ourMission">
+                    <i class="fas fa-chevron-circle-down" id="chevron"></i>  
+                </a>
             </section>
             
         </header> <!-- Header section END -->
@@ -75,15 +77,15 @@
                             Our mission is to create a world where all orcas can thrive in their natural, wild  environments. Founded in 2007 by Shannon Forsythe, The Orca Crowd is a non-profit organisation dedicated to the welfare and protection of orcas worldwide. 
                         </p> 
                     </div>
+
+                    <figure id="video" class="center">
+                        <video autoplay muted loop controls >
+                            <source src="images/pexels-orcas-swimming.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video> <!-- Video by Zlatin Georgiev from Pexels, https://www.pexels.com/video/5607993/ -->
+                    </figure>
                     
                     <article class="contentSection"> <!-- main content box START -->
-                        
-                        <figure id="video" class="center">
-                            <video autoplay muted loop width="700" controls >
-                                <source src="images/pexels-orcas-swimming.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video> <!-- Video by Zlatin Georgiev from Pexels, https://www.pexels.com/video/5607993/ -->
-                        </figure>
                         
                         <div>
                             <h3>Orcas don't belong in captivity</h3>
@@ -205,6 +207,7 @@
                     
                     <div class="flexContainer"> <!-- flexbox container START -->
                         <div class="adopt">
+                            <i class="fa-regular fa-heart"></i>
                             <h3>Adopt</h3>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In mollis nunc sed id semper risus in. 
@@ -212,6 +215,7 @@
                         </div>
 
                         <div class="donate">
+                            <i class="fa-solid fa-dollar-sign"></i>
                             <h3>Donate</h3>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In mollis nunc sed id semper risus in. 

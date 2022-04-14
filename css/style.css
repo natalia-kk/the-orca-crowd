@@ -415,18 +415,22 @@ nav {
 
 /* style and position mission statement */
 #missionStatement p {
-    width: 80%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 /* style and position main section */
 .contentSection {
     width: 80%;
     background-color: #E2F2F7;
-    padding: 6%;
+    padding: 50px;
     margin-left: 20%;
-    margin-top: 5%;
+    margin-top: 30px;
     margin-bottom: 5%;
 }
 
@@ -438,23 +442,25 @@ nav {
     }
     #missionStatement p  {
         width: 100%;
-        text-align: center;
     }
 }
 
 /* style and position fact box within main section */
 #factBox {
     background-color: #E2F2F7;
-    padding-top: 10%;
+    padding-top: 15x;
+}
+#factBox li {
+    padding: 15px;
+    list-style-type: none;
 }
 
 /* style and position video */
 video {
-    max-width: 700px;
+    max-width: 1000px;
     width: 100%;
     height: auto;
-    padding: 0 5% 5% 5%;    
-    
+    padding: 40px;     
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -462,16 +468,21 @@ video {
 
 /* style and position orca illustration */
 figure #illustration { /* RESPONSIVE IMAGE NOT WORKING */
-    max-width: 200px;
+    max-width: 400px;
     width: 100%;
     height: auto; 
     transform: translate(50%); /* position image (move towards right) */
 }
 
 /* MEDIA QUERY breakpoint illustration size */ /* could NOT get responsive image to work */
-@media (max-width: 550px) {
+@media (max-width: 1366px) {
     figure #illustration {
-        width: 100px;
+        max-width: 250px;
+    }
+}
+@media (max-width: 700px) {
+    figure #illustration {
+        width: 150px;
         height: auto;
     }
 }
@@ -482,7 +493,7 @@ figure #illustration { /* RESPONSIVE IMAGE NOT WORKING */
     max-width: 650px; /* responsive box: only takes up 100% when screen size is reduced (optimizes viewing size on both large and small screens) */
     background-color: #4B7299;
     color: #fff;
-    padding: 5%;
+    padding: 55px  30px 30px;
     margin-top: 5%;
 }
 
@@ -513,6 +524,12 @@ figure #illustration { /* RESPONSIVE IMAGE NOT WORKING */
     min-width: 250px;
 }
 
+@media (max-width: 950px) {
+    .historyFacts, .corkyBox {
+        flex: 100%;
+    }
+}
+
 /* left column */
 .historyFacts { 
     background-color: #F9F9F9;  
@@ -537,14 +554,18 @@ figure #illustration { /* RESPONSIVE IMAGE NOT WORKING */
 }
 
 .campaign { 
-    padding: 5%;
+    padding: 50px;
     margin: 3%;
-    width: 100%;
+    width: 75%;
     max-width: 850px;
     background-color: #4B7299;
     color: #fff;
     align-content: space-between;
     box-shadow: 2px 5px 8px #888;
+}
+
+.campaign p {
+    padding: 15px 0;
 }
 
 .campaign h3 {
@@ -556,17 +577,14 @@ figure #illustration { /* RESPONSIVE IMAGE NOT WORKING */
 .campaign img {
     width: 100%;
     max-width: 650px;
+    padding-top: 20px;
     height: auto;
     
     /* center images */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
-}
-
-.campaign p {
-    margin: 2% 0;
+    margin-bottom: 20px;
 }
 
 
@@ -579,7 +597,7 @@ figure #illustration { /* RESPONSIVE IMAGE NOT WORKING */
 .adopt, .donate { 
     min-width: 300px;
     max-width: 400px;
-    padding: 5%;
+    padding: 50px;
     margin: 3%;
     color: #fff;
     align-content: space-between;
@@ -589,13 +607,18 @@ figure #illustration { /* RESPONSIVE IMAGE NOT WORKING */
 
 /* left column */
 .adopt {
-    background-color: #9FDAD8;
+    background-color: #4B7299;
 }
 
 /* right column */
 .donate {
     background-color: #0DB3AF;
 
+}
+
+.fa-dollar-sign, .fa-heart {
+    font-size: 3em;
+    padding-bottom: 15px;
 }
 
 
@@ -848,7 +871,7 @@ input[type=button]:hover {
 
 /* add space above 'back to top' button */
 #top {
-    margin-top: 10%;
+    margin-top: 60px;
 }
 
 /* MEDIA QUERY breakpoint breakpoint to resize buttons */
