@@ -474,7 +474,33 @@ figure #illustration { /* RESPONSIVE IMAGE NOT WORKING */
     transform: translate(50%); /* position image (move towards right) */
 }
 
-/* MEDIA QUERY breakpoint illustration size */ /* could NOT get responsive image to work */
+/* style and position 'Did you know?' box */
+.contentBox {
+    width: 100%;
+    max-width: 650px; /* responsive box: only takes up 100% when screen size is reduced (optimizes viewing size on both large and small screens) */
+    background-color: #4B7299;
+    color: #fff;
+    padding: 55px  30px 30px;
+    margin-top: 5%;
+}
+
+.fa-circle-question {
+    font-size: 4em;
+}
+
+aside {
+    display: flex;
+    flex-direction: row;
+}
+
+.questionBubble {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px 25px 0;
+}
+
+/* MEDIA QUERY breakpoint illustration size */
 @media (max-width: 1366px) {
     figure #illustration {
         max-width: 250px;
@@ -485,16 +511,29 @@ figure #illustration { /* RESPONSIVE IMAGE NOT WORKING */
         width: 150px;
         height: auto;
     }
+    .fa-circle-question {
+        font-size: 3em;
+    }
 }
-
-/* style and position 'Did you know?' box */
-.contentBox {
-    width: 100%;
-    max-width: 650px; /* responsive box: only takes up 100% when screen size is reduced (optimizes viewing size on both large and small screens) */
-    background-color: #4B7299;
-    color: #fff;
-    padding: 55px  30px 30px;
-    margin-top: 5%;
+@media (max-width: 400px) {
+    .contentSection {
+        padding: 30px 20px 20px;
+    }
+    video {
+        padding: 15px 0 0;
+    }
+    .contentBox {
+        text-align: center;
+    }
+    .fa-circle-question {
+        font-size: 2em;
+    } 
+    .questionBubble {
+        padding: 0 15px 15px;
+    }
+    aside {
+        flex-direction: column;
+    }  
 }
 
 /* CALL TO ACTION stylings */
@@ -558,8 +597,8 @@ figure #illustration { /* RESPONSIVE IMAGE NOT WORKING */
     margin: 3%;
     width: 75%;
     max-width: 850px;
-    background-color: #4B7299;
-    color: #fff;
+    background-color: #E2F2F7;
+    color: #1E272E;
     align-content: space-between;
     box-shadow: 2px 5px 8px #888;
 }
@@ -570,7 +609,7 @@ figure #illustration { /* RESPONSIVE IMAGE NOT WORKING */
 
 .campaign h3 {
     text-align: center; 
-    background-image: linear-gradient(to bottom, transparent 55%, #0DB3AF 45%); /* creates text 'underline' */
+    background-image: linear-gradient(to bottom, transparent 55%, #9FDAD8 45%); /* creates text 'underline' */
     background-repeat: no-repeat;
 }
 
@@ -585,6 +624,13 @@ figure #illustration { /* RESPONSIVE IMAGE NOT WORKING */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+}
+
+@media (max-width: 550px) {
+    .campaign {
+        padding: 20px;
+        width: 100%;
+    }
 }
 
 
@@ -833,6 +879,7 @@ footer {
     border: none;
     display: block;
     border-radius: 20px;
+    font-size: 5px;
 }
 
 /* style button text */
